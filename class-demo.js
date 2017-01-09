@@ -78,3 +78,62 @@ var addToDOM = document.getElementById("demo");
 addToDOM.innerHTML = "Hi there, NSS ninjas";
 // This adds it to the browser page where the div is. But not the index.html page.
 // DOM = Document Object Model (document is html/browser page, object is how it's organized, model is the data)
+
+// ARRAYS
+var myJunkDrawer = [3, "dime", true, null, "28"];
+console.log("myJunkDrawer", myJunkDrawer);
+console.log("myJunkDrawer", myJunkDrawer[1]);
+// null is holding the #3 slot in this array
+// PROTO = prototypes = built-in methods, properties, functions, & other built-in functionality that we can use
+
+myJunkDrawer.push("baseball");
+console.log("myJunkDrawer", myJunkDrawer);
+// we added baseball to the end of the array
+
+myJunkDrawer.unshift("what is this?");
+console.log("myJunkDrawer", myJunkDrawer);
+// we added "what is this?" to the beginning of the array
+
+var thing = myJunkDrawer.pop();
+console.log("thing", thing);
+console.log("after pop", myJunkDrawer);
+// pop removed the last thing from the array
+
+// var maxScore = Math.max.apply(Math, scores);
+// var minScore = Math.min.apply(Math, scores);
+// Easy way to get the maximum and minimum values in an array
+
+// OBJECTS
+// Objects can get very in-depth:
+
+var songArray = [];
+// empty array
+var myObject = {};
+// empty object
+
+var song = {
+  title: "Call Me Maybe",
+  artist: "Carley Rae",
+  album: "Greatest Hits",
+  awards: ["Big award", "one hit"],
+  type: {
+    style: "pop",
+    listenability: "none",
+    producers: {
+      name: "Fred Jones",
+      name2: "Alice Smith"
+    }
+  },
+  listAwards: function() {
+    console.log("Show me the Awards");
+  }
+};
+
+songArray.push(song);
+// pushes all of the above song variable into the empty songArray
+console.log("songArray", songArray);
+console.log("song", song);
+console.log("songArray[0]", songArray[0]);
+
+// find out the key (name) for items in object:
+console.log("Object.keys(song)", Object.keys(song));

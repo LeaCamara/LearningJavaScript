@@ -137,3 +137,9 @@ console.log("songArray[0]", songArray[0]);
 
 // find out the key (name) for items in object:
 console.log("Object.keys(song)", Object.keys(song));
+
+// NEW SNIPPET:
+// Tools - Developer - New Snippet
+// File - Save As - "console-log.sublime-snippet"
+// console.log("${1}", ${2:value});
+// <tabTrigger>cl</tabTrigger>
